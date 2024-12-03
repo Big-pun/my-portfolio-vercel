@@ -11,7 +11,7 @@ const myRoutes = createBrowserRouter(
     {
       path: "/",
       element: <App />,
-      errorElement: <ErrorPage />, // Utilise ErrorPage pour les erreurs internes
+      errorElement: <ErrorPage />, // Affiche ErrorPage pour les erreurs internes
       children: [
         {
           path: "/",
@@ -29,12 +29,13 @@ const myRoutes = createBrowserRouter(
           path: "/contact",
           element: <Contact />,
         },
+        {
+          path: "*",
+          element: <ErrorPage />,
+        },
       ],
     },
-  ],
-  {
-    basename: "/my-portfolio/", // Le nom de ton dépôt GitHub Pages
-  }
+  ]
 );
 
 export default myRoutes;
