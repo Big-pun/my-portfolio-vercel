@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bâtiment */
+.building {
+    position: relative; /* Nécessaire pour que le toit se positionne correctement */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 4px;
+    gap: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Toit */
+.roof-1 {
+    position: absolute; /* Permet de positionner au-dessus du bâtiment */
+    top: -10px; /* Place le toit légèrement au-dessus du bâtiment */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Centre parfaitement */
+    width: 0;
+    height: 0;
+
+    /* Triangle */
+    border-left: 12px solid transparent; /* Ajuste la largeur (égale à 50% de w-7) */
+    border-right: 12px solid transparent;
+    border-bottom: 10px solid #4a5568; /* Couleur du toit */
+    z-index: 1; /* S'assure que le toit est visible */
+}
+
+.roof-2 {
+    position: absolute; /* Permet de positionner au-dessus du bâtiment */
+    top: -10px; /* Place le toit légèrement au-dessus du bâtiment */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Centre parfaitement */
+    width: 0;
+    height: 0;
+
+    /* Triangle */
+    border-left: 22px solid transparent; /* Ajuste la largeur (égale à 50% de w-7) */
+    border-right: 22px solid transparent;
+    border-bottom: 10px solid #4a5568; /* Couleur du toit */
+    z-index: 1; /* S'assure que le toit est visible */
+}
+
+/* Fenêtres */
+.window {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255, 255, 0, 0.8); /* Fenêtre illuminée */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 1px;
+}
+
