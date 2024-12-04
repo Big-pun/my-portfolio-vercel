@@ -7,7 +7,7 @@ function H2() {
                 className='text-5xl mb-12 md:mb-8 mt-24'
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 2, delay: 5 }}
+                transition={{ duration: 2, delay: 3.5 }}
             >
                 Quick <span className='bg-gradient-green bg-clip-text text-transparent font-bold'>introduction</span>
             <p className='text-xl md:text-2xl mt-8'>

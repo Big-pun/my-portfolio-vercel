@@ -8,7 +8,7 @@ function DoubleArrow() {
             className='text-green-500 text-5xl md:text-9xl animate-pulse items-center'
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5, delay: 3 }}
+            transition={{ duration: 1.5, delay: 5 }}
         >
             <MdOutlineKeyboardDoubleArrowDown />
         </motion.div>

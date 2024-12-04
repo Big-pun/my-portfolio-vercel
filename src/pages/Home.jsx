@@ -62,7 +62,7 @@ function Home() {
                             Feel free to explore the code and reach out if you have any questions or suggestions!
                         </p>
                         <div className="flex justify-center items-center">
-                            <a className='text-xl md:text-2xl mx-auto text-center bg-green-500 px-6 my-4 border-2 border-gray-300 rounded-lg text-black animate-pulse' href='https://github.com/Big-pun/my-portfolio' target='_blank'>
+                            <a className='text-xl md:text-2xl flex flex-col items-center mx-auto text-center bg-green-500 px-6 my-4 border-2 border-gray-300 rounded-lg text-black animate-pulse' href='https://github.com/Big-pun/my-portfolio' target='_blank'>
                                 <RiGitRepositoryCommitsLine />
                             </a>
                         </div>
