@@ -47,7 +47,7 @@ export default function Hangman() {
   ];
 
   return (
-    <div className="text-center mt-12 bg-slate-700 bg-opacity-50 rounded-lg py-4">
+    <div className="text-center mt-12 bg-slate-700 bg-opacity-50 rounded-lg py-4 mx-auto mb-12">
       <h2 className="text-2xl font-bold mb-4 bg-gradient-green bg-clip-text text-transparent">Hangman</h2>
       <h3 className="text-xl font-mono tracking-wider">{displayWord()}</h3>
 

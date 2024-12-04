@@ -1,9 +1,9 @@
 import TypeWritterIntro from '../components/Home/Intro';
-import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import H1 from '../components/Home/H1';
 import H2 from '../components/Home/H2';
 import { RiGitRepositoryCommitsLine } from "react-icons/ri";
 import Logo from '../components/Home/Logo';
+import DoubleArrow from '../components/Main/DoubleArrow';
 
 function Home() {
 
@@ -25,16 +25,12 @@ function Home() {
                 </div>
 
                 <div className='col-span-6 col-start-4 md:col-span-3 md:col-start-9 mb-12 md:mb-0 md:mt-24'>
-                    <Logo/>
+                    <Logo />
                 </div>
 
                 <div className='col-span-12 text-center hidden lg:block lg:-mt-32'>
-                    <button
-                        className='text-green-500 text-5xl md:text-9xl animate-pulse items-center'
-                        aria-label="Scroll to section 2"
-                        onClick={scrollToTextSection}
-                    >
-                        <MdOutlineKeyboardDoubleArrowDown />
+                    <button onClick={scrollToTextSection}>
+                        <DoubleArrow />
                     </button>
                 </div>
             </section>
