@@ -31,7 +31,7 @@ function Projects() {
             },
             {
                 title: 'Library',
-                description: 'This project is built with Vue.JS and allows users to manage a collection of books. The site features a search function to quickly find books by title or author from the Google Books API. Users can add and delete books from their collection and mark it as read. User can see the details of a book when it has been added to the collection. The ',
+                description: 'This project is built with Vue.JS and allows users to manage a collection of books. The site features a search function to quickly find books by title or author from the Google Books API. Users can add and delete books from their collection and mark it as read. User can see the details of a book when it has been added to the collection.',
                 imageUrl: Library,
                 link: 'https://big-pun.github.io/Evaluation-2---Adrien-Thomas/'
             }
@@ -50,23 +50,21 @@ function Projects() {
 
 
         return (
-            <>
+                        <>
                 <motion.div 
-                initial={{ opacity: 0, y: 0 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.5, delay: 3 }}>
+                    initial={{ opacity: 0, y: 0 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.5, delay: 3 }}>
                     <Slider {...settings}>
                         {projects.map((project, index) => (
-                            <div key={index} className='bg-slate-600 bg-opacity-50 rounded-lg'>
-                                <div className="flex items-center gap-12 p-4 h-96">
-                                    <div className='flex w-1/3 mx-auto max-h-full'>
-                                        <img src={project.imageUrl} alt={project.title} />
+                            <div key={index} className='bg-slate-600 bg-opacity-50 rounded-lg mt-4'>
+                                <div className="flex flex-col md:flex-row items-center gap-4 md:gap-12 p-4 h-auto">
+                                    <div className='flex w-full mx-auto max-h-full'>
+                                        <img src={project.imageUrl} alt={project.title} className='w-full h-auto object-cover' />
                                     </div>
-                                    <div className='flex flex-col gap-8 '>
-                                        <h2 className='text-2xl font-bold text-green-500'>{project.title}</h2>
-                                        <p className='max-w-prose text-lg'>{project.description}</p>
-
-
+                                    <div className='flex flex-col gap-4 md:gap-8'>
+                                        <h2 className='text-xl md:text-2xl font-bold text-green-500'>{project.title}</h2>
+                                        <p className='text-base md:text-lg'>{project.description}</p>
                                         <a href={project.link} target="_blank" rel="noopener noreferrer" className="rounded-lg relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gray-800 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-green-600 before:duration-500 before:ease-out hover:shadow-green-600 hover:before:h-56 hover:before:w-56">
                                             <span className="relative z-10">See project</span>
                                         </a>
