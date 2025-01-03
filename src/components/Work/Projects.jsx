@@ -31,7 +31,7 @@ function Projects() {
             },
             {
                 title: 'Library',
-                description: 'This project is built with Vue.JS and allows users to manage a collection of books.The site features a search function to quickly find books by title or author from the Google Books API. Users can add and delete books from their collection and mark it as read.',
+                description: 'This project is built with Vue.JS and allows users to manage a collection of books. The site features a search function to quickly find books by title or author from the Google Books API. Users can add and delete books from their collection and mark it as read. User can see the details of a book when it has been added to the collection. The ',
                 imageUrl: Library,
                 link: 'https://big-pun.github.io/Evaluation-2---Adrien-Thomas/'
             }
@@ -58,7 +58,7 @@ function Projects() {
                     <Slider {...settings}>
                         {projects.map((project, index) => (
                             <div key={index} className='bg-slate-600 bg-opacity-50 rounded-lg'>
-                                <div className="flex items-center gap-12 p-4 h-96 ">
+                                <div className="flex items-center gap-12 p-4 h-96">
                                     <div className='flex w-1/3 mx-auto max-h-full'>
                                         <img src={project.imageUrl} alt={project.title} />
                                     </div>
