@@ -1,6 +1,7 @@
 import DBZKakarot from '../../Images/DBZKakarot.png';
 import TRS from '../../Images/TheRollingStoners.png';
 import Campings from '../../Images/Campings.png';
+import Library from '../../Images/Library.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -27,6 +28,12 @@ function Projects() {
                 description: 'This project is built with PHP and MySQL, and it allows users to search for campsites by region. The site features a list of campsites, a listing by stars and a other listing by possible experiences. Users can also search for campsites by region. The site also includes a section with recipes for camping meals. User can update recipes and add new ones.',
                 imageUrl: Campings,
                 link: 'http://adrienthomas.free.nf/?i=1'
+            },
+            {
+                title: 'Library',
+                description: 'This project is built with Vue JS and allows users to manage a collection of books. Users can add, edit, and delete books from their collection. The site features a search function to quickly find books by title or author.',
+                imageUrl: Library,
+                link: 'https://big-pun.github.io/Evaluation-2---Adrien-Thomas/'
             }
         ];
 
