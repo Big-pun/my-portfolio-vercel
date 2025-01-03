@@ -31,7 +31,7 @@ function Projects() {
             },
             {
                 title: 'Library',
-                description: 'This project is built with Vue JS and allows users to manage a collection of books. Users can add, edit, and delete books from their collection. The site features a search function to quickly find books by title or author.',
+                description: 'This project is built with Vue.JS and allows users to manage a collection of books.The site features a search function to quickly find books by title or author from the Google Books API. Users can add and delete books from their collection and mark it as read.',
                 imageUrl: Library,
                 link: 'https://big-pun.github.io/Evaluation-2---Adrien-Thomas/'
             }
