@@ -11,7 +11,8 @@ function H2() {
             >
                 Quick <span className='bg-gradient-green bg-clip-text text-transparent font-bold'>introduction</span>
             <p className='text-xl md:text-2xl mt-8'>
-                I am a web developer who loves to create websites and web applications. Currently following a front-end web development program, I&apos;ll soon be looking for a intership opportunity ... but that&apos;s not our subject here
+                I am a web developer who loves to create websites and web applications. Currently following a front-end web development program, I&apos;m currently looking for a intership opportunity to learn and grow as a developer. I&apos;m passionate about learning new technologies and building projects. I&apos;m always looking for new challenges and opportunities to improve my skills.
+                Send me a message if you want to work together or just to say hi!
             </p>
             </motion.h2>
         </>
